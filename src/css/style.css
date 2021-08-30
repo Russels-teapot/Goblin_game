@@ -1,0 +1,39 @@
+body {
+    color: #999;
+}
+.container {
+  width: 400px
+}
+.gameboard {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 3px solid #888;
+}
+.gameboard__row, .gameboard__cell {
+  border: 1px solid #888;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+}
+
+.gameboard__cell {
+  width: 50%
+}
+
+.gameboard__cell_active {
+  background-image: url("../img/goblin.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.counter {
+  width: 100px;
+  border: 2px solid #888
+}
+
+.counter__header, .counter__number {
+  font: bold 16px sans-serif;
+}
