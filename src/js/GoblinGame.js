@@ -23,13 +23,13 @@ export default class GoblinGame {
     this.board.addEventListener('click', (e) => {
       const chosenCell = e.target;
       if (chosenCell.classList.contains('gameboard__cell_active')) {
-        this.winCounter.innerText += 1;
+        this.winCounter.innerText = +this.winCounter.innerText + 1;
         changeCell();
       } else {
-        this.looseCounter.innerText += 1;
+        this.looseCounter.innerText = +this.looseCounter.innerText + 1;
         changeCell();
       }
-      if (this.looseCounter.innerText === 5) {
+      if (+this.looseCounter.innerText === 5) {
         this.clearCounters();
         alert('Вы проиграли');
       }
