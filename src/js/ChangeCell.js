@@ -6,6 +6,8 @@ export default function changeCell() {
   while (activeCell === newCell) {
     newCell = getRandomCell();
   }
+  console.log('Текущая ячейка', activeCell);
+  console.log('Следующая ячейка', newCell);
   activeCell.classList.remove('gameboard__cell_active');
   newCell.classList.add('gameboard__cell_active');
 }
